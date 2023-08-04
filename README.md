@@ -1,2 +1,11 @@
-# language-app-webpage
-Dialecture - A mock website for a (non-existent) language learning app, made using HTML/CSS in 3 days. 
+# Dialecture - A mock website
+Made for a (non-existent) language learning app, with full-featured pages.
+
+# Time to make:
+3 days
+
+# Technologies:
+HTML/CSS/JAVASCRIPT
+
+# Tools used:
+UNIX, Git Bash, Visual Studio Code.
