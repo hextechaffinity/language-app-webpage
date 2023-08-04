@@ -1,11 +1,16 @@
-# Dialecture - A mock website
-Made for a (non-existent) language learning app, with full-featured pages.
+# Dialecture: Languages (Website)
 
-# Time to make:
-3 days
+A mock website made for showcasing a (non-existent) language learning app named "Dialecture" with full-featured and mobile-responsive pages!
 
-# Technologies:
-HTML/CSS/JAVASCRIPT
+## Live Demo 🌐
 
-# Tools used:
-UNIX, Git Bash, Visual Studio Code.
+https://hoangnamdev.github.io/Dialecture/
+
+## Technologies 🛠️ (Front-end only)
+
+**Languages:** HTML5, CSS3, JavaScript.  
+**Frameworks/Libraries:** Bootstrap, AOS.  
+**Tools:** Visual Studio Code, Git bash, UNIX.
+
+## Time to make: 3 days. ⌛
+-- Check out my repository for more projects like this! ✅ --
