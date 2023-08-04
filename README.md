@@ -2,6 +2,8 @@
 
 A mock website made for showcasing a (non-existent) language learning app named "Dialecture" with full-featured and mobile-responsive pages!
 
+![dialecture](https://github.com/hoangnamdev/Dialecture/assets/125788036/787de499-a268-463f-852e-d88851c17265)
+
 ## Live Demo 🌐
 
 https://hoangnamdev.github.io/Dialecture/
