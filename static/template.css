@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /* PRIMARY COLOR TONES */
+    --dark: rgb(0, 8, 82);
+    --mid: rgb(128, 128, 255);
+    --light: lightblue;
+}
+
+* {
+    z-index: 0;
+    font-family: 'Inter', Helvetica, sans-serif;
+}
+
+html,body {
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mobile-logo {
+    margin: 1rem 1rem 0 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.floating-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    position: fixed;
+    border: 2px solid black;
+    box-shadow: 5px 10px #000000bb;
+    top: -200px;
+    right: 2vw;
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+    background: white;
+    transition: top 1s ease;
+}
+
+.floating-nav > i {
+    transition: opacity 0.5s ease;
+    font-size: 50px;
+}
+
+.floating-nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    z-index: 8;
+    padding: 20px;
+    position: fixed;
+    border: 2px solid black;
+    border-radius: 0px;
+    top: -100vh;
+    right: 2vw;
+    background: white;
+    transition: top 1s ease;
+    height: 200px;
+}
+
+.floating-nav-links > a {
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.floating-nav-links > a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+/* Navigation bar: for navigating between pages */
+
+nav {
+    position: fixed;
+    height: 100px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: top 0.5s ease;
+}
+/* nav-blur: the background of the navigation bar and a blur overlay */
+.nav-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+}
+/* nav-logo-text: the text that says "Dialecture" */
+.nav-logo-text {
+    margin-left: 3.5%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/*nav-links: redirects that lead to the different pages */
+.nav-links {
+    margin: 0 20%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    gap: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links > a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-links > a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.nav-btn {
+    text-decoration: none;
+    margin-right: 15px;
+    box-shadow: 5px 10px #000000bb;
+    border: 2px solid var(--dark);
+    color: var(--dark);
+    background: linear-gradient(90deg,var(--light),var(--mid));
+    padding: 10px 14px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* END of Navigation bar */
+
+
+
+/* FOOTER */
+
+footer {
+    background: var(--dark);
+    color: var(--light);
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-desc {
+    width: 30%;
+}
+
+.footer-info {
+    display: flex;
+    gap: 10%;
+}
+
+.footer-headings {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer-desc > p,
+.footer-lists > * {
+    font-size: 1.2rem;
+}
+
+.footer-lists > a {
+    line-height: 2rem;
+    transition: all 0.4s ease;
+}
+
+.footer-lists > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-lists.bullet {
+    list-style: disc;
+}
+
+/* END of footer */
+
+
+@media only screen and (min-width: 791px) {
+    #spacing {
+        display: block;
+    }
+
+    #mobile-logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    nav {
+        display: none;
+    }
+    #spacing {
+        display: none;
+    }
+    #mobile-logo {
+        display: block;
+    }
+}
+@media only screen and (max-width: 740px) {
+    footer {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 650px) {
+    footer {
+        flex-direction: column;
+    }
+    .footer-desc {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .footer-desc > p,
+    .footer-lists > * {
+        font-size: 0.8rem;
+    }
+}

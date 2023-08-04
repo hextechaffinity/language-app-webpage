@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialecture: Languages</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="static/template.css">
+    <link rel="stylesheet" href="static/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- START consistent across pages -->
+
+    <!--make space for desktop nav bar/mobile logo-->
+    <div id="spacing" style="width: 100%; height: 100px;"></div>
+    <p id="mobile-logo">Dia<b style="color: rgb(0, 0, 167); font-weight: 600;">lect</b><b style="color: blue; font-weight: 600;">ure</b></p>
+    <!-- floating nav: For mobile devices and for accessing the menu while scrolling on desktop -->
+    <div id="floating-nav-container">
+        <div onclick="togglenav()" class="floating-nav"><i class="bi bi-list"></i></div>
+        <div class="floating-nav-links">
+            <a href="index.html"><li>Home</li></a>
+            <a href="features.html"><li>Features</li></a>
+            <a href="contacts.html"><li>Contacts</li></a>
+        </div>
+    </div>
+    <!-- END of floating nav -->
+    <nav>
+        <div class="nav-blur"></div>
+        <p class="nav-logo-text">Dia<b style="color: rgb(0, 0, 167); font-weight: 600;">lect</b><b style="color: blue; font-weight: 600;">ure</b></p>
+        <ul class="nav-links">
+            <a style="text-decoration: underline;" href="index.html"><li>Home</li></a>
+            <a href="features.html"><li>Features</li></a>
+            <a href="contacts.html"><li>Contacts</li></a>
+        </ul>
+        <a href="install.html" class="nav-btn">Join us</a>
+    </nav>
+    <!-- END consistent across pages -->
+
+    
+    <header>
+        <h1 class="header-maintext">Language learning. Made&nbsp;
+            <b class="typewrite" data-period="1500" data-type='[ "easy.", "đơn giản.", "fácil.", "やさしい。" , "आसान।", "쉬운."]'>
+                <span class="wrap"></span>
+            </b>
+        </h1>
+        <p class="header-subtext"><b style="color: blue; font-weight: 600;">Dialecture</b> is the fun, free app for learning 40+ languages through quick, bite-sized lessons. Practice speaking, reading, listening, and writing to build your vocabulary and grammar skills.</p>
+        <a href="install.html" class="header-btn">Install</a>
+        <p class="header-btn-subtext">(Available on <i class="bi bi-android2"></i> and <i class="bi bi-apple"></i> via <i class="bi bi-google-play"> Play Store</i> and <i class="bi bi-browser-safari"> App Store </i>)</p>
+        <div class="header-stats">
+            <div class="header-stats-box one">
+                <p id="boxicon"><i class="bi bi-star-fill"></i></p>
+                <h1>4.8 stars</h1>
+                <p>Is our average across all Android and IOS users.</p>
+            </div>
+            <div class="header-stats-box two">
+                <p id="boxicon"><i class="bi bi-trophy-fill"></i></p>
+                <h1>'Best of 2024'</h1>
+                <p>We were voted for 'Best productivity app of 2024' by Google in the 'Google Play Best Of Awards'.</p>
+            </div>
+            <div class="header-stats-box three">
+                <p id="boxicon"><i class="bi bi-code-slash"></i></p>
+                <h1>Editor's Choice for Productivity</h1>
+                <p>We were selected by the editorial team of App Store as an Editor's Choice app for productivity.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-section">
+            <div data-aos="fade-down" class="left">
+                <h1 class="main-section-headings">Speak with <b id="highlight">confidence</b></h1>
+                <p class="main-section-text">The app is equipped with various lectures specializing in Reading, Writing, Speaking and Listening. We are always working to expand our lessons library so that we can guarantee you will never run out of content.</p>
+                <a href="features.html" class="main-section-href">Check out our features <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div data-aos="fade-up" class="right">
+                <img class="main-section-img" src="assets/mockimage1.png">
+            </div>
+        </div>
+        <div class="main-section">
+            <div data-aos="fade-down" class="right">
+                <h1 class="main-section-headings">Become <b id="highlight">multilingual</b></h1>
+                <p class="main-section-text">Our app contains lectures in over 40 languages (and counting!), fitting to the language needs of most users. Each contains dedicated lessons to ensure you are able to effectively converse in each of the dialects you choose to learn.</p>
+            </div>
+            <div data-aos="fade-up" class="left">
+                <img class="main-section-img" src="assets/mockimage2.png">
+            </div>
+        </div>
+        <div class="main-section">
+            <div data-aos="fade-down" class="left">
+                <h1 class="main-section-headings">Leave your <b id="highlight">comfort</b> zone</h1>
+                <p class="main-section-text">You will be prepared to participate in simple conversations with foreigners after you finish our beginner course, then you'll able to move on to higher levels to achieve even better communication skills!</p>
+            </div>
+            <div data-aos="fade-up" class="right">
+                <img class="main-section-img" src="assets/mockimage3.png">
+            </div>
+        </div>
+        <div class="main-section">
+            <div data-aos="fade-down" class="right">
+                <h1 class="main-section-headings">Question whether <b id="highlight">aliens</b> are real</h1>
+                <p class="main-section-text">Extraterrestrial life has fascinated humans since the discovery of planets like Mars. Despite technological advancements, we still lack a concrete answer to whether we are alone in the Universe. However, as we learn about the Cosmos, we become more confident in the existence of alien life beyond Earth.</p>            
+            </div>
+            <div data-aos="fade-up" class="left">
+                <img class="main-section-img" src="assets/mockimage4.png">
+            </div>
+        </div>
+        <div class="main-section last">
+            <div data-aos="fade-down" class="left">
+                <h1 class="main-section-headings">The <b id="highlight">catch?</b></h1>
+                <p class="main-section-text">You may be thinking: "Wow! Everything sounds good! There has to be a catch, right?". Well, there's no catch! Our app is actually completely free of ads and we do not process your data for any purpose, other than saving your study progress in the app.</p>
+                <a href="features.html" class="main-section-href">Get it now <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div data-aos="fade-up" class="right">
+                <img class="main-section-img" src="assets/mockimage5.png">
+            </div>
+        </div>
+    </main>
+
+
+    <!-- CONTINUE consistent across pages -->
+    <footer>
+        <div class="footer-desc">
+            <h1 class="footer-headings">Dialecture: Languages</h1>
+            <p>Mock language learning website made by Hoang Nam (or Noah Hwang). Not an actual language learning platform, although it could be if you want to think it is.</p>
+        </div>
+        <div class="footer-info">
+            <div class="footer-pages">
+                <h1 class="footer-headings">Pages</h1>
+                <ul class="footer-lists">
+                    <a><li>Home</li></a>
+                    <a><li>Features</li></a>
+                    <a><li>Contact</li></a>
+                    <a><li>Downloads</li></a>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <h1 class="footer-headings">Contacts</h1>
+                <ul class="footer-lists bullet">
+                    <li>inquiry@dialecture.com</li>
+                    <li>(123) 456-7890</li>
+                    <li>13 Russell Street, Melbourne, Australia</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- END consistent across pages -->
+    <script>
+        AOS.init();
+    </script>
+    <script src="index.js"></script> 
+    <script src="nav.js"></script> 
+</body>
+</html>

@@ -1,0 +1,177 @@
+.main-contacts {
+    margin-top: 20px;
+}
+
+.main-contacts > h1 {
+    text-align: center;
+}
+
+.main-contacts > p {
+    text-align: center;
+}
+
+/* Bottom install button and showcases boxes, reused from index.css */
+
+.main-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-btn {
+    font-weight: bold;
+    border: 2px solid var(--dark);
+    box-shadow: 5px 10px #000000bb;
+    margin: 20px 0 10px 0;
+    padding: 7px 20px 5px 20px;
+    background: linear-gradient(90deg,var(--light),var(--mid));
+    color: var(--dark);
+    font-size: 2rem;
+}
+
+.header-btn-subtext {
+    font-size: 0.75rem;
+}
+
+/* Header-stats: Displaying achievements for your project */
+.main-bottom-stats {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 2% 5%;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.header-stats-box {
+    border: 1px solid rgb(188, 189, 211);
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 25px;
+    width: 25%;
+    height: 300px;
+    transition: width 0.5s ease;
+}
+
+.header-stats-box > p {
+    font-size: 1.2rem;
+}
+
+#boxicon {
+    font-size: 4rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* Bottom install button and showcases boxes, reused from index.css */
+
+.main-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-btn {
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid var(--dark);
+    box-shadow: 5px 10px #000000bb;
+    margin: 20px 0 10px 0;
+    padding: 7px 20px 5px 20px;
+    background: linear-gradient(90deg,var(--light),var(--mid));
+    color: var(--dark);
+    font-size: 2rem;
+}
+
+.header-btn-subtext {
+    font-size: 0.75rem;
+}
+
+/* Header-stats: Displaying achievements for your project */
+.main-bottom-stats {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 2% 5%;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.header-stats-box {
+    border: 1px solid rgb(188, 189, 211);
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 25px;
+    width: 25%;
+    height: 300px;
+    transition: width 0.5s ease;
+}
+
+.header-stats-box > p {
+    font-size: 1.2rem;
+}
+
+#boxicon {
+    font-size: 4rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* Each box in order from left to right is colored differently */
+
+.header-stats-box.one {
+    background: var(--light);
+    color: var(--dark);
+}
+
+.header-stats-box.two {
+    background: var(--mid);
+    color: var(--dark);
+}
+.header-stats-box.three {
+    background: var(--dark);
+    color: var(--light);
+}
+
+@media only screen and (min-width: 1150px) {
+    .header-stats-box:hover {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .header-stats-box {
+      min-height: 500px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    nav {
+        display: none;
+    }
+    .main-bottom-stats {
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+    .header-stats-box {
+        min-height: 0;
+        width: 80vw;
+        margin: 10px;
+    }
+    .main-section {
+        margin: 0;
+    } 
+
+    .main-section-img {
+        position: relative;
+        object-fit: contain;
+        margin: 0;
+        height: 200px;
+        width: 200px;
+    }
+}

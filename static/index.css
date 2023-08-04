@@ -1,0 +1,263 @@
+/* Highlighting text in the "main" sections */
+
+#highlight {
+    font-weight: 500;
+    padding: 4px 1rem 0 1rem;
+    background: var(--light);
+    box-shadow: 8px 8px var(--light);
+}
+
+
+
+/* Header: Hero section, telling the people what needs to be heard the most */
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header-maintext {
+    min-width: 890px;
+    font-weight: 500;
+    padding: 30px 0 25px 0;
+    margin: 0 8% 0 8%;
+    text-align: center;
+    font-size: 6rem;
+}
+/* Styling for the "highlighted" text with typewriter animation */
+.header-maintext > b {
+    line-height: 10px;
+    font-weight: 500;
+    padding:  0 10px;
+    background: var(--light);
+    color: var(--dark);
+}
+
+.header-subtext {
+    font-size: 1.2rem;
+    margin: 0 20% 0 20%;
+    text-align: center;
+}
+
+.header-btn {
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid var(--dark);
+    box-shadow: 5px 10px #000000bb;
+    margin: 20px 0 10px 0;
+    padding: 7px 20px 5px 20px;
+    background: linear-gradient(90deg,var(--light),var(--mid));
+    color: var(--dark);
+    font-size: 2rem;
+}
+
+.header-btn-subtext {
+    font-size: 0.75rem;
+}
+/* Header-stats: Displaying achievements for your project */
+.header-stats {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 2% 5%;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.header-stats-box {
+    border: 1px solid rgb(188, 189, 211);
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 25px;
+    width: 25%;
+    min-height: 300px;
+    transition: width 0.5s ease;
+}
+
+.header-stats-box > p {
+    font-size: 1.2rem;
+}
+
+#boxicon {
+    font-size: 4rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* Each box in order from left to right is colored differently */
+.header-stats-box.one {
+    background: var(--light);
+    color: var(--dark);
+}
+
+.header-stats-box.two {
+    background: var(--mid);
+    color: var(--dark);
+}
+.header-stats-box.three {
+    background: var(--dark);
+    color: var(--light);
+}
+
+/* END of Header */
+
+
+
+/* Main: The main part of your project, you want to convey most informations here */
+
+main {
+    position: relative;
+}
+/* Section 1: boxes that slide in as you scroll down */
+.main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 10% 0 10%;
+}
+
+.main-section-headings {
+    font-size: 3em;
+    margin-bottom: 1rem;
+    width: 40vw;
+}
+
+.main-section-text {
+    width: 40vw;
+    line-height: 1.6em;
+    font-size: 1.25rem;
+}
+
+.main-section-href {
+    padding: 0;
+    font-size: 1.1rem;
+    color: blue;
+    margin-top: 1rem;
+    transition: all 1s ease;
+    white-space:nowrap;
+}
+
+.main-section-href:hover {
+    color: black;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+
+.main-section-img {
+    object-fit: contain;
+    margin: 0 10%;
+    height: 300px;
+    width: 300px;
+}
+
+.main-section > .left {
+    order: 1;
+}
+
+.main-section > .right {
+    order: 2;
+}
+
+.main-section.last {
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1150px) {
+    .header-stats-box:hover {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .header-stats-box {
+      min-height: 500px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header-maintext {
+        min-width: 0;
+        width: 600px;
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    nav {
+        display: none;
+    }
+    .header-stats {
+        width: 100%;
+        flex-direction: column;
+    }
+    .header-stats-box {
+        min-height: 0;
+        width: 80vw;
+        margin: 10px;
+    }
+    .main-section {
+        margin: 0;
+    } 
+
+    .main-section-img {
+        position: relative;
+        object-fit: contain;
+        margin: 0;
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .header-maintext {
+        width: 370px;
+        font-size: 3rem;
+    }
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 50px 10%;
+    }
+
+    .main-section-text {
+        width: initial;
+        line-height: 1.6em;
+        font-size: 1.25rem;
+    }
+
+    .main-section-img {
+        margin-top: 2rem;
+    }
+
+    .main-section > .left {
+        order: 0;
+    }
+    .main-section > .right {
+        order: 0;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .header-maintext {
+        font-size: 2.25rem;
+        width:  250px;
+    }
+
+    .header-maintext > b::before{
+        content: "\a";
+        white-space: pre;
+    }
+
+    .header-maintext > b {
+        padding: 0;
+    }
+    
+}

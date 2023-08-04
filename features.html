@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialecture: Languages</title>
+    <link rel="stylesheet" href="static/template.css">
+    <link rel="stylesheet" href="static/features.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <!--make space for nav bar-->
+    <div id="spacing" style="width: 100%; height: 100px;"></div>
+    <p id="mobile-logo">Dia<b style="color: rgb(0, 0, 167); font-weight: 600;">lect</b><b style="color: blue; font-weight: 600;">ure</b></p>
+    <!-- floating nav: For mobile devices and for accessing the menu while scrolling on desktop -->
+    <div id="floating-nav-container">
+        <div onclick="togglenav()" class="floating-nav"><i class="bi bi-list"></i></div>
+        <div class="floating-nav-links">
+            <a href="index.html"><li>Home</li></a>
+            <a href="features.html"><li>Features</li></a>
+            <a href="contacts.html"><li>Contacts</li></a>
+        </div>
+    </div>
+    <!-- END of floating nav -->
+    <nav>
+        <div class="nav-blur"></div>
+        <p class="nav-logo-text">Dia<b style="color: rgb(0, 0, 167); font-weight: 600;">lect</b><b style="color: blue; font-weight: 600;">ure</b></p>
+        <ul class="nav-links">
+            <a href="index.html"><li>Home</li></a>
+            <a style="text-decoration: underline;" href="features.html"><li>Features</li></a>
+            <a href="contacts.html"><li>Contacts</li></a>
+        </ul>
+        <a href="install.html" class="nav-btn">Join us</a>
+    </nav>
+
+    <main>
+        <h1 class="main-headings">Features</h1>
+        <p class="main-subtext">Intended to make for the smoothest learning experience possible!</p>
+        <img class="main-banner" src="assets/features-banner.png">
+        <ul class="main-features">
+            <li><b id="highlight">Learn</b> a new language with the world’s most-downloaded education app!</li>
+            <li><b id="highlight">Fun</b> and free for learning 40+ languages through quick, bite-sized lessons.</li>
+            <li><b id="highlight">Practice</b> speaking, reading, listening, and writing to build your vocabulary and grammar skills.</li>
+            <li><b id="highlight">Game-like lessons</b> and fun characters help you build solid language skills.</li>
+            <li><b id="highlight">Designed by language experts,</b> Dialecture has a science-based teaching methodology proven to foster long-term language retention.</li>
+            <li><b id="highlight">Track and save</b> your progress, your learning journey is safe within our large network of databases.</li>
+        </ul>
+        <div class="main-bottom">
+            <a href="install.html" class="header-btn">Install</a>
+            <p class="header-btn-subtext">(Available on <i class="bi bi-android2"></i> and <i class="bi bi-apple"></i> via <i class="bi bi-google-play"> Play Store</i> and <i class="bi bi-browser-safari"> App Store </i>)</p>
+        </div>
+        <div class="main-bottom-stats">
+            <div class="header-stats-box one">
+                <p id="boxicon"><i class="bi bi-star-fill"></i></p>
+                <h1>4.8 stars</h1>
+                <p>Is our average across all Android and IOS users.</p>
+            </div>
+            <div class="header-stats-box two">
+                <p id="boxicon"><i class="bi bi-trophy-fill"></i></p>
+                <h1>'Best of 2024'</h1>
+                <p>We were voted for 'Best productivity app of 2024' by Google in the 'Google Play Best Of Awards'.</p>
+            </div>
+            <div class="header-stats-box three">
+                <p id="boxicon"><i class="bi bi-code-slash"></i></p>
+                <h1>Editor's Choice for Productivity</h1>
+                <p>We were selected by the editorial team of App Store as an Editor's Choice app for productivity.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-desc">
+            <h1 class="footer-headings">Dialecture: Languages</h1>
+            <p>Mock language learning website made by Hoang Nam (or Noah Hwang). Not an actual language learning platform, although it could be if you want to think it is.</p>
+        </div>
+        <div class="footer-info">
+            <div class="footer-pages">
+                <h1 class="footer-headings">Pages</h1>
+                <ul class="footer-lists">
+                    <a><li>Home</li></a>
+                    <a><li>Features</li></a>
+                    <a><li>Contact</li></a>
+                    <a><li>Downloads</li></a>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <h1 class="footer-headings">Contacts</h1>
+                <ul class="footer-lists bullet">
+                    <li>inquiry@dialecture.com</li>
+                    <li>(123) 456-7890</li>
+                    <li>13 Russell Street, Melbourne, Australia</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script> 
+    <script src="nav.js"></script> 
+</body>
+</html>
